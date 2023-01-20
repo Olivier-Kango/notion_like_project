@@ -2,9 +2,10 @@
 
 <div align="center">
 
-  <img src="https://user-images.githubusercontent.com/108806646/203941212-a33b97da-6d84-4649-b763-4e8191c24805.png" alt="logo" width="140"  height="auto" />
+  <img src="https://user-images.githubusercontent.com/108806646/213449106-90ed13d7-c37c-403d-8f1f-0baf224b431f.png" alt="logo" width="140"  height="auto" />
   <br/>
 
+  <h3>Helpjuice Test Project: Front-end Developer</h3>
   <h3><b>README</b></h3>
 
 </div>
@@ -34,17 +35,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Movies Catalogue <a id="about-project"></a>
+# 📖 Helpjuice Test Project <a id="about-project"></a>
 
->  This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.
+>  This application is a [Notion-like](https://www.notion.so/Getting-Started-f2457d2c2c21448c9b553a47ab776a0b) editor. It’s not much of an editor, but rather an app that lets you write anywhere and convert your content into H1. 
 
-**Movies Catalogue** retrieves data from this [API](https://api.themoviedb.org/3/search/movie?api_key=fd692f2bca8c5c05526b5565f2b36fec&query=Home).
+**Helpjuice Test Project** allows the user to take notes, make a to do list and organize the day in order to increase the productivity.
 
-Please click on the video below to more explanation
+Please click on the video below 👇 for more explanation 
 
-## Video for explanation
+## Explanation video
 
-[<img width="427" alt="loom" src="https://user-images.githubusercontent.com/108806646/205190428-7ab21287-88bd-4350-b18b-04146e0705dc.png">](https://www.loom.com/share/9b46f373ab0b4253808dcba82accb7a3)
+[<img width="427" alt="explanation_video" src="">]()
 
 ## 🛠 Built With <a id="built-with"></a>
 
@@ -56,7 +57,6 @@ Please click on the video below to more explanation
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://redux.js.org/">Redux</a></li>
     <li><a href="https://www.w3schools.com/css/css_intro.asp">SCSS</a></li>
   </ul>
 </details>
@@ -65,9 +65,9 @@ Please click on the video below to more explanation
 
 ### Key Features <a id="key-features"></a>
 
-- **User Can Search Movies**
-- **user can Filter Movies by Release Date**
-- **User can See Details about a Movie**
+- **User can write anywhere**
+- **User can convert the content into H1 by typing '/' + 1**
+- **User can delete the content**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,9 +75,9 @@ Please click on the video below to more explanation
 
 ## 🚀 Live Demo <a id="live-demo"></a>
 
-> Please click the link below to open our webpage in your browser
+> Please click 👇 the link below to open the webpage in your browser
 
-- [Live Demo Link](https://moviescatalogue-olivier.netlify.app/)
+- [Helpjuice Test Project]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 2. Clone this repo in your terminal or git bash using the command
 
    ```
-     git clone <URL> 'https://github.com/Olivier-Kango/movies-catalogue' in your terminal
+     git clone <URL> 'https://github.com/Olivier-Kango/helpjuice_test_project.git' in your terminal
       
    ```
 
@@ -136,25 +136,25 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+To deploy this project I used :
 
-- [Netlify](https://app.netlify.com/teams/olivierkango/overview), or
-- [Vercel](https://vercel.com/).
+- [Heroku](https://www.heroku.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a id="authors"></a>
+## 👥 Author <a id="authors"></a>
 
-> This project was built by:
+> This project was built in under 24-48 hours by :
 
 
 👤 **Olivier Kango**
 
-- GitHub: [@githubolivier](https://github.com/Olivier-Kango)
-- Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
+- GitHub: [@github-olivier](https://github.com/Olivier-Kango)
+- Twitter: [@twitter-olivier](https://twitter.com/olivierkango1)
+- LinkedIn: [@linkedIn-olivier](https://www.linkedin.com/in/olivier-kango-b990601b8/)
+- Angelist: [@angelist-olivier](https://angel.co/u/kango-olivier)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,9 +162,10 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a id="future-features"></a>
 
-- **I will implement some UX improvements: include transitions and/or animations, etc.**
-- **I will implement additional pages in the website (each with a route in the SPA): about me, references, etc.**
-- **Make sure that you have a decent desktop design for the webapp**
+- **I will implement I will implement the possibility of clicking and dragging in order to move the elements.**
+- **I will implement a way to highlight any text, and use the menu that pops up to style your writing however you like.**
+- **I will implement a New Page button (+) at the bottom of your sidebar to add a new page.**
+- **I will add a little triangle button in oder to toggle and see more useful tips!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,9 +173,9 @@ You can deploy this project using:
 
 ## 🤝 Contributing <a id="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome !!!
 
-Feel free to check the [issues page](https://github.com/Olivier-Kango/movies-catalogue/issues/new).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/helpjuice_test_project/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,9 +193,9 @@ Feel free to check the [issues page](https://github.com/Olivier-Kango/movies-cat
 
 I would like to thank:
 
-- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the website design system that inspired my design.
-- [TMDB](https://www.themoviedb.org/documentation/api) for the amazing Movies API.
-- Theophile Kango and My cording partners.
+- Emil Hajric | CEO, [Helpjuice.com](https://helpjuice.com/) for the great opportunity he gave me to apply and complete this test project.
+- Kareem Wilson, my coding partner at Microverse for connecting me with Emil.
+- Theophile Kango my young brother for his financial support to execute this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
