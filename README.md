@@ -138,7 +138,7 @@ To run tests, run the following command:
 
 To deploy this project I used :
 
-- [Heroku](https://www.heroku.com/)
+- [Netlify](https://app.netlify.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
