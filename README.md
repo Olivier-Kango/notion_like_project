@@ -77,7 +77,7 @@ Please click on the video below 👇 for more explanation
 
 > Please click 👇 the link below to open the webpage in your browser
 
-- [Helpjuice Test Project]()
+- [Helpjuice Test Project](https://helpjuice-test-project-olivier.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +138,7 @@ To run tests, run the following command:
 
 To deploy this project I used :
 
-- [Heroku](https://www.heroku.com/)
+- [Netlify](https://app.netlify.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
