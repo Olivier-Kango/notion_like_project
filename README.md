@@ -77,7 +77,7 @@ Please click on the video below 👇 for more explanation
 
 > Please click 👇 the link below to open the webpage in your browser
 
-- [Helpjuice Test Project]()
+- [Helpjuice Test Project](https://helpjuice-test-project-olivier.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
