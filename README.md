@@ -138,7 +138,7 @@ To run tests, run the following command:
 
 To deploy this project I used :
 
-- [Netlify](https://app.netlify.com/)
+- [Netlify](https://helpjuice-test-project-olivier.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
