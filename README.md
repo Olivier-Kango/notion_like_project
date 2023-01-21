@@ -45,7 +45,7 @@ Please click on the video below 👇 for more explanation
 
 ## Explanation video
 
-[<img width="427" alt="explanation_video" src="">]()
+[<img width="960" alt="video presentation" src="https://user-images.githubusercontent.com/108806646/213794006-5ca3dd1b-7439-44f6-9c2d-99ae3dd1e6f1.png">](https://www.loom.com/share/e1bc4de70b52462bad6f201f4d518c2b)
 
 ## 🛠 Built With <a id="built-with"></a>
 
