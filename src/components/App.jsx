@@ -3,7 +3,7 @@ import EditablePage from './Page';
 
 const App = () => (
   <div className="App">
-    <h1>Front-end developer test project</h1>
+    <h1>Notion-like Project</h1>
     <hr />
     <p className="welcome">
       <span role="img" aria-label="greetings" className="Emoji">
