@@ -5,7 +5,7 @@
   <img src="https://user-images.githubusercontent.com/108806646/213449106-90ed13d7-c37c-403d-8f1f-0baf224b431f.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3>Helpjuice Test Project: Front-end Developer</h3>
+  <h3>Notion-like Project</h3>
   <h3><b>README</b></h3>
 
 </div>
@@ -35,11 +35,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Helpjuice Test Project <a id="about-project"></a>
+# 📖 Notion-like Project <a id="about-project"></a>
 
 >  This application is a [Notion-like](https://www.notion.so/Getting-Started-f2457d2c2c21448c9b553a47ab776a0b) editor. It’s not much of an editor, but rather an app that lets you write anywhere and convert your content into H1. 
 
-**Helpjuice Test Project** allows the user to take notes, make a to do list and organize the day in order to increase the productivity.
+**Notion-like Project** allows the user to take notes, make a to do list and organize the day in order to increase the productivity.
 
 Please click on the video below 👇 for more explanation 
 
@@ -77,7 +77,7 @@ Please click on the video below 👇 for more explanation
 
 > Please click 👇 the link below to open the webpage in your browser
 
-- [Helpjuice Test Project](https://helpjuice-test-project-olivier.netlify.app/)
+- [Notion-like Project](https://notion-like-project-olivier.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 2. Clone this repo in your terminal or git bash using the command
 
    ```
-     git clone <URL> 'https://github.com/Olivier-Kango/helpjuice_test_project.git' in your terminal
+     git clone <URL> 'https://github.com/Olivier-Kango/notion-like.git' in your terminal
       
    ```
 
@@ -138,7 +138,7 @@ To run tests, run the following command:
 
 To deploy this project I used :
 
-- [Netlify](https://helpjuice-test-project-olivier.netlify.app/)
+- [Netlify](https://notion-like-project-olivier.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +175,7 @@ To deploy this project I used :
 
 Contributions, issues, and feature requests are welcome !!!
 
-Feel free to check the [issues page](https://github.com/Olivier-Kango/helpjuice_test_project/issues/new).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/notion-like/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,8 +193,6 @@ Feel free to check the [issues page](https://github.com/Olivier-Kango/helpjuice_
 
 I would like to thank:
 
-- Emil Hajric | CEO, [Helpjuice.com](https://helpjuice.com/) for the great opportunity he gave me to apply and complete this test project.
-- Kareem Wilson, my coding partner at Microverse for connecting me with Emil.
 - Theophile Kango my young brother for his financial support to execute this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
