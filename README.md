@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 2. Clone this repo in your terminal or git bash using the command
 
    ```
-     git clone <URL> 'https://github.com/Olivier-Kango/notion-like.git' in your terminal
+     git clone <URL> 'https://github.com/Olivier-Kango/notion_like_project.git' in your terminal
       
    ```
 
@@ -175,7 +175,7 @@ To deploy this project I used :
 
 Contributions, issues, and feature requests are welcome !!!
 
-Feel free to check the [issues page](https://github.com/Olivier-Kango/notion-like/issues/new).
+Feel free to check the [issues page](https://github.com/Olivier-Kango/notion_like_project/issues/new).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
