@@ -9,7 +9,7 @@ header {
 }
 
 .header-div {
-  color: rgb(157, 163, 174);;
+  color: rgb(157, 163, 174);
 }
 
 .header-div ul {
@@ -37,7 +37,7 @@ header {
   left: 0;
   width: 0%;
   height: 1.6px;
-  background-color: rgb(157, 163, 174);;
+  background-color: rgb(157, 163, 174);
   transition: width 0.5s ease-in-out, font-weight 0.5s ease-in-out;
 }
 
@@ -52,11 +52,11 @@ header {
 .edit-publish {
   display: flex;
   gap: 16px;
-  color: #9DA3AE;
+  color: #9da3ae;
 }
 
 .middle {
-  color: #9DA3AE;
+  color: #9da3ae;
 }
 
 .edit-publish .edit {
@@ -73,6 +73,5 @@ header {
   cursor: pointer;
   font-weight: 700;
   font-size: 0.75rem;
-
   color: #3565a9;
 }
