@@ -12,7 +12,7 @@ const allowedTags = [
   {
     id: 'paragraph',
     tag: 'p',
-    label: 'Paragraph',
+    label: 'Expandable Heading 1',
   },
 ];
 
@@ -125,7 +125,7 @@ class SelectMenu extends React.Component {
                   <div className="descr">
                     {item.id === 'page-title' ? <p>Shortcut: type # + space</p> : (
                       <p>
-                        {'Shortcut: type >> # + space'}
+                        {'Shortcut: type >># + space'}
                       </p>
                     )}
                   </div>
