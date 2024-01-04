@@ -1,10 +1,10 @@
 $input-color: rgba(0, 0, 0, 0.349);
 
 body {
-  display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 40rem;
+  min-height: 100vh;
+  font-size: 0.8rem;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -42,17 +42,15 @@ body {
 
   .Input {
     margin: 0.25rem 0;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
   }
 
   .Input:hover {
-    background: #fafafa;
     outline-color: #f5f6fb;
   }
 
   .Input:focus {
     outline: none;
-    background: #f5f6fb;
   }
 
   [contenteditable=true]:empty::before {
@@ -62,49 +60,18 @@ body {
   }
 }
 
-.SelectMenu {
-  position: absolute;
-  width: 15rem;
-  height: 15rem;
-  z-index: 11;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  .Items {
-    background: #fafafa;
-    box-shadow:
-      rgba(15, 15, 15, 0.05) 0 0 0 1px,
-      rgba(15, 15, 15, 0.1) 0 3px 6px,
-      rgba(15, 15, 15, 0.2) 0 9px 24px;
-    border-radius: 0.1rem;
-    height: 12rem;
-
-    div[role="button"] {
-      font-size: 0.875rem;
-      font-weight: 600;
-      padding: 0.8rem 1rem;
-      border-bottom: 1px solid #f5f6fb;
-    }
-
-    div[role="button"]:last-of-type {
-      border-bottom: none;
-    }
-
-    div[role="button"]:hover {
-      background: #c9c9c9;
-      cursor: pointer;
-    }
-
-    div[role="button"]:hover,
-    div[role="button"]:focus {
-      background: #dbdbdb;
-      cursor: pointer;
-    }
-  }
-}
-
 .Selected {
   background: #f5f6fb;
   border-radius: 0.5rem;
+}
+
+.reset-icon {
+  cursor: pointer;
+  position: absolute;
+  left: 280px;
+  top: 280px;
+
+  img {
+    width: 20px;
+  }
 }

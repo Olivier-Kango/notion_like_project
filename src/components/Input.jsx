@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import SelectMenu from './Menu';
 import '../styling/App.scss';
 import { getCaretCoordinates, setCaretToEnd } from './function/caretHelpers';
+import hum from '../assets/hum.png';
 
 class Input extends React.Component {
   constructor(props) {
@@ -90,6 +91,16 @@ class Input extends React.Component {
     }
   }
 
+  handleKeyPress = (e) => {
+    const { html } = this.state;
+    if (e.key === '1' && html === '/') {
+      this.setState({ tag: 'h1' }, () => {
+        this.setState({ html: '' });
+        this.closeSelectMenuHandler();
+      });
+    }
+  };
+
   openSelectMenuHandler() {
     const { x, y } = getCaretCoordinates();
     this.setState({
@@ -97,6 +108,7 @@ class Input extends React.Component {
       selectMenuPosition: { x, y },
     });
     document.addEventListener('click', this.closeSelectMenuHandler);
+    document.addEventListener('keydown', this.handleKeyPress);
   }
 
   closeSelectMenuHandler() {
@@ -125,6 +137,19 @@ class Input extends React.Component {
     } = this.state;
     const { placeholder } = this.props;
 
+    const resetIcon = tag === 'h1' && html && ( // Condition pour afficher l'icône de réinitialisation
+      // eslint-disable-next-line max-len
+      // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+      <div
+        className="reset-icon"
+        onClick={() => {
+          this.setState({ html: '', tag: 'p' });
+        }}
+      >
+        <img src={hum} alt="hum" className="hum" />
+      </div>
+    );
+
     return (
       <>
         {selectMenuIsOpen && (
@@ -134,6 +159,8 @@ class Input extends React.Component {
             close={this.closeSelectMenuHandler}
           />
         )}
+
+        {tag === 'h1' && html !== '' && resetIcon}
         <ContentEditable
           className="Input"
           placeholder={placeholder}

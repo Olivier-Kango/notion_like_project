@@ -1,0 +1,103 @@
+.SelectMenu {
+  position: absolute;
+  top: 18.85rem;
+  left: 19.8rem;
+  width: 15.5rem;
+  height: 19rem;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 5px;
+  border: 0.1rem solid rgb(229, 231, 235);
+  box-shadow: 0 13px 20px 0 rgba(0, 0.12, 0, 0.12);
+  padding: 0.5rem 0;
+
+  h2 {
+    font-size: 0.88rem;
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 0 0.6rem;
+  }
+
+  .keep {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    color: rgb(157, 163, 174);
+    padding: 0 0.6rem;
+  }
+
+  .filter {
+    margin-top: 0;
+    font-size: 0.75rem;
+    color: rgba(98, 102, 109, 0.888);
+    padding: 0 0.6rem;
+
+    #filterId {
+      color: white;
+      background-color: rgb(53, 101, 169);
+      border-radius: 0.25rem;
+      padding: 0.15rem 0.25rem;
+    }
+  }
+
+  .Items {
+    height: 15rem;
+
+    div[role="button"]:last-of-type {
+      border-bottom: none;
+    }
+
+    div[role="button"]:hover {
+      background: #c9c9c957;
+      cursor: pointer;
+    }
+
+    div[role="button"]:hover,
+    div[role="button"]:focus {
+      background: #dbdbdb58;
+      cursor: pointer;
+    }
+  }
+
+  .Items div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .T {
+      font-family: 'Rokkitt', serif;
+      flex: 1;
+      font-size: 1.5rem;
+      color: rgba(157, 163, 174, 0.744);
+      padding-left: 0.6rem;
+    }
+
+    .container-label {
+      flex: 7;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      align-items: start;
+      padding-right: 0.6rem;
+
+      .label {
+        font-weight: 700;
+        font-size: 0.875rem;
+      }
+
+      .descr {
+        font-weight: 400;
+        color: rgb(157, 163, 174);
+        padding-bottom: 0;
+
+        p {
+          margin-bottom: 2px;
+          margin-top: 2px;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

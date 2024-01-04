@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+#arrowH {
+  margin-right: 18px;
+}
+
+.header-div {
+  color: rgb(157, 163, 174);
+}
+
+.header-div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  font-size: 0.78rem;
+}
+
+.header-div ul li {
+  position: relative;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  color: rgb(157, 163, 174);
+}
+
+.header-div ul li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1.6px;
+  background-color: rgb(157, 163, 174);
+  transition: width 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.header-div ul li:hover::before {
+  width: 100%;
+}
+
+.header-div ul li:hover {
+  font-weight: 500;
+}
+
+.edit-publish {
+  display: flex;
+  gap: 16px;
+  color: #9da3ae;
+}
+
+.middle {
+  color: #9da3ae;
+}
+
+.edit-publish .edit {
+  display: flex;
+  gap: 6px;
+  font-size: 0.75rem;
+  align-items: center;
+}
+
+.edit-publish select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #3565a9;
+}

@@ -1,0 +1,44 @@
+main {
+  padding: 0.35rem 1rem;
+  width: 100%;
+  max-width: 683px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Para Section */
+.para {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 20px;
+}
+
+.para h1 {
+  padding-bottom: 0.8rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  margin-top: 0.8rem;
+}
+
+.para p {
+  line-height: 1.5;
+  font-size: 0.85rem;
+  margin-top: -5px;
+  padding-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.icon-container {
+  position: fixed;
+  bottom: 4px;
+  right: -30px;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.icon-container img {
+  width: 70%;
+}

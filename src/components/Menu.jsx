@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { matchSorter } from 'match-sorter';
+import '../styling/Menu.scss';
 
 const allowedTags = [
   {
@@ -11,7 +12,7 @@ const allowedTags = [
   {
     id: 'paragraph',
     tag: 'p',
-    label: 'Paragraph',
+    label: 'Expandable Heading 1',
   },
 ];
 
@@ -32,9 +33,10 @@ class SelectMenu extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { command } = this.state;
+    const filteredItems = matchSorter(allowedTags, command, { keys: ['tag'] });
+    const newItems = filteredItems.length > 0 ? filteredItems : allowedTags;
     if (prevState.command !== command) {
-      const items = matchSorter(allowedTags, command, { keys: ['tag'] });
-      this.setState({ items });
+      this.setState({ items: newItems });
     }
   }
 
@@ -75,18 +77,35 @@ class SelectMenu extends React.Component {
         break;
       }
       default:
-        this.setState({ command: command + e.key });
+        this.setState({ command: command + e.key, selectedItem: 0 });
         break;
     }
   }
 
   render() {
-    const { items, selectedItemItem } = this.state;
+    const { items, selectedItemItem, command } = this.state;
     const { onSelect } = this.props;
 
     return (
       <div className="SelectMenu">
-        <div className="Items">
+        <h2>Add blocks</h2>
+        <p className="keep">Keep typing to filter, or escape to exit</p>
+        <p className="filter">
+          Filtering keyword
+          {' '}
+          {command && command !== 'Shift' && command !== 'CapsLock' && (
+            <span id="filterId">{command}</span>
+          )}
+        </p>
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+        <div
+          className="Items"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              onSelect(items[selectedItemItem].tag);
+            }
+          }}
+        >
           {items.map((item) => {
             const isselectedItem = items.indexOf(item) === selectedItemItem;
             return (
@@ -98,8 +117,18 @@ class SelectMenu extends React.Component {
                 onClick={() => onSelect(item.tag)}
                 onKeyDown={() => onSelect(item.tag)}
               >
-                <div>
-                  {item.label}
+                <div className="T">T</div>
+                <div className="container-label">
+                  <div className="label">
+                    {item.label}
+                  </div>
+                  <div className="descr">
+                    {item.id === 'page-title' ? <p>Shortcut: type # + space</p> : (
+                      <p>
+                        {'Shortcut: type >># + space'}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             );
