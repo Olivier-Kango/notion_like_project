@@ -20,7 +20,7 @@ class Input extends React.Component {
       html: '',
       tag: 'p',
       previousKey: '',
-      selectMenuIsOpen: true,
+      selectMenuIsOpen: false,
       selectMenuPosition: {
         x: null,
         y: null,
