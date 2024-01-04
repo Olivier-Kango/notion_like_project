@@ -3,16 +3,16 @@
 import React from 'react';
 import '../styling/App.scss';
 import EditablePage from './Page';
-import arrowH from '../../assets/arrowH.svg';
-import book from '../../assets/book.svg';
-import edit from '../../assets/edit.svg';
-import barImage from '../../assets/barImage.svg';
-import lapin from '../../assets/lapin.svg';
-import count from '../../assets/count.svg';
-import button from '../../assets/button.svg';
-import button2 from '../../assets/button2.svg';
-import button3 from '../../assets/button3.svg';
-import mark from '../../assets/mark.svg';
+import arrowH from '../assets/arrowH.svg';
+import book from '../assets/book.svg';
+import edit from '../assets/edit.svg';
+import barImage from '../assets/barImage.svg';
+import lapin from '../assets/lapin.svg';
+import count from '../assets/count.svg';
+import button from '../assets/button.svg';
+import button2 from '../assets/button2.svg';
+import button3 from '../assets/button3.svg';
+import mark from '../assets/mark.svg';
 
 const App = () => (
   <div className="App">
