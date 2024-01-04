@@ -31,3 +31,16 @@ main {
   padding-top: 0;
   margin-bottom: 1.2rem;
 }
+
+
+.icon-container {
+  position: fixed;
+  bottom: 4px;
+  right:  -30px; 
+  transform: translateX(-50%); 
+  z-index: 999;
+}
+
+.icon-container img {
+  width: 70%;
+}
