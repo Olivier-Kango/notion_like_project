@@ -77,7 +77,7 @@ class SelectMenu extends React.Component {
         break;
       }
       default:
-        this.setState({ command: command + e.key });
+        this.setState({ command: command + e.key, selectedItem: 0 });
         break;
     }
   }
@@ -97,7 +97,15 @@ class SelectMenu extends React.Component {
             <span id="filterId">{command}</span>
           )}
         </p>
-        <div className="Items">
+        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
+        <div
+          className="Items"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              onSelect(items[selectedItemItem].tag);
+            }
+          }}
+        >
           {items.map((item) => {
             const isselectedItem = items.indexOf(item) === selectedItemItem;
             return (
@@ -109,9 +117,22 @@ class SelectMenu extends React.Component {
                 onClick={() => onSelect(item.tag)}
                 onKeyDown={() => onSelect(item.tag)}
               >
-                <div>
-                  {item.label}
+                <div className="container-label">
+                  <div>
+                    {item.label}
+                  </div>
+                  <div>
+                    {item.id === 'page-title' ? <span>Shortcut: type # + space</span> : (
+                      <span>
+                        Shortcut: type
+                        {' '}
+                        {'>>'}
+                        # + space
+                      </span>
+                    )}
+                  </div>
                 </div>
+                <div className="T">T</div>
               </div>
             );
           })}

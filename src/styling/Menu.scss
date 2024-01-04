@@ -40,8 +40,6 @@
   }
 
   .Items {
-    background: #fafafa;
-    border-radius: 0.1rem;
     height: 14rem;
 
     div[role="button"] {
@@ -65,5 +63,9 @@
       background: #dbdbdb;
       cursor: pointer;
     }
+  }
+
+  .container-label {
+    background: red;
   }
 }
