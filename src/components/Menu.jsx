@@ -33,9 +33,10 @@ class SelectMenu extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { command } = this.state;
+    const filteredItems = matchSorter(allowedTags, command, { keys: ['tag'] });
+    const newItems = filteredItems.length > 0 ? filteredItems : allowedTags;
     if (prevState.command !== command) {
-      const items = matchSorter(allowedTags, command, { keys: ['tag'] });
-      this.setState({ items });
+      this.setState({ items: newItems });
     }
   }
 
@@ -82,7 +83,7 @@ class SelectMenu extends React.Component {
   }
 
   render() {
-    const { items, selectedItemItem } = this.state;
+    const { items, selectedItemItem, command } = this.state;
     const { onSelect } = this.props;
 
     return (
@@ -91,7 +92,7 @@ class SelectMenu extends React.Component {
         <p className="keep">Keep typing to filter, or escape to exit</p>
         <p className="filter">
           Filtering keyword
-          <span />
+          <span id="filterId">{command}</span>
         </p>
         <div className="Items">
           {items.map((item) => {
