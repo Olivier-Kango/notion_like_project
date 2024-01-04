@@ -3,6 +3,16 @@
 import React from 'react';
 import '../styling/App.scss';
 import EditablePage from './Page';
+import arrowH from '../../assets/arrowH.svg';
+import book from '../../assets/book.svg';
+import edit from '../../assets/edit.svg';
+import barImage from '../../assets/barImage.svg';
+import lapin from '../../assets/lapin.svg';
+import count from '../../assets/count.svg';
+import button from '../../assets/button.svg';
+import button2 from '../../assets/button2.svg';
+import button3 from '../../assets/button3.svg';
+import mark from '../../assets/mark.svg';
 
 const App = () => (
   <div className="App">
@@ -10,8 +20,8 @@ const App = () => (
     <header>
       <div className="header-div">
         <ul>
-          <img src="./assets/arrowH.svg" alt="arrowH" id="arrowH" />
-          <img src="./assets/book.svg" alt="book" />
+          <img src={arrowH} alt="arrowH" id="arrowH" />
+          <img src={book} alt="book" />
           <li>Main</li>
           <li>/</li>
           <li>Getting Started</li>
@@ -21,7 +31,7 @@ const App = () => (
       </div>
       <div className="edit-publish">
         <div className="edit">
-          <img src="./assets/edit.svg" alt="edit" />
+          <img src={edit} alt="edit" />
           <span>Editing</span>
         </div>
         <div className="middle">|</div>
@@ -38,26 +48,26 @@ const App = () => (
           <div className="P">P</div>
           <div className="middle">|</div>
           <div className="time">
-            <img src="./assets/barImage.svg" alt="barImage" />
+            <img src={barImage} alt="barImage" />
             <div>0min</div>
           </div>
           <div className="middle">|</div>
-          <img src="./assets/lapin.png" alt="lapin" className="lapin" />
+          <img src={lapin} alt="lapin" className="lapin" />
           <div className="middle">|</div>
           <div className="count">
-            <img src="./assets/count.svg" alt="count" />
+            <img src={count} alt="count" />
             <div>0</div>
           </div>
           <input type="text" className="input-s" />
           <div className="div-button">
             <button className="button">
-              <img src="./assets/button.svg" alt="button" />
+              <img src={button} alt="button" />
             </button>
             <button className="button">
-              <img src="./assets/button2.svg" alt="button2" />
+              <img src={button2} alt="button2" />
             </button>
             <button className="button">
-              <img src="./assets/button3.svg" alt="button3" />
+              <img src={button3} alt="button3" />
             </button>
           </div>
         </div>
@@ -71,7 +81,7 @@ const App = () => (
     </main>
 
     <div className="icon-container">
-      <img src="./assets/mark.png" alt="icon-mark" />
+      <img src={mark} alt="icon-mark" />
     </div>
   </div>
 );
