@@ -77,7 +77,7 @@ Please click on the video below 👇 for more explanation
 
 > Please click 👇 the link below to open the webpage in your browser
 
-- [Notion-like Project](https://notion-like-project-olivier.netlify.app/)
+- [Notion-like Project](https://notion-like-project-t7kc.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
