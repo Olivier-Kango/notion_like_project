@@ -13,6 +13,7 @@ import button2 from '../assets/button2.svg';
 import button3 from '../assets/button3.svg';
 import mark from '../assets/mark.png';
 import '../styling/App.scss';
+import '../styling/Header.scss';
 
 const App = () => (
   <div className="App">
