@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import SelectMenu from './Menu';
 import '../styling/App.scss';
 import { getCaretCoordinates, setCaretToEnd } from './function/caretHelpers';
+import hum from '../assets/hum.png';
 
 class Input extends React.Component {
   constructor(props) {
@@ -125,6 +126,19 @@ class Input extends React.Component {
     } = this.state;
     const { placeholder } = this.props;
 
+    const resetIcon = tag === 'h1' && html && ( // Condition pour afficher l'icône de réinitialisation
+      // eslint-disable-next-line max-len
+      // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+      <div
+        className="reset-icon"
+        onClick={() => {
+          this.setState({ html: '', tag: 'p' });
+        }}
+      >
+        <img src={hum} alt="hum" className="hum" />
+      </div>
+    );
+
     return (
       <>
         {selectMenuIsOpen && (
@@ -134,16 +148,20 @@ class Input extends React.Component {
             close={this.closeSelectMenuHandler}
           />
         )}
-        <ContentEditable
-          className="Input"
-          placeholder={placeholder}
-          html={html}
-          tagName={tag}
-          innerRef={this.contentEditable}
-          onChange={this.onChangeHandler}
-          onKeyDown={this.onKeyDownHandler}
-          onKeyUp={this.onKeyUpHandler}
-        />
+
+        <div className="contentE">
+          <span>{tag === 'h1' && html !== '' && resetIcon}</span>
+          <ContentEditable
+            className="Input"
+            placeholder={placeholder}
+            html={html}
+            tagName={tag}
+            innerRef={this.contentEditable}
+            onChange={this.onChangeHandler}
+            onKeyDown={this.onKeyDownHandler}
+            onKeyUp={this.onKeyUpHandler}
+          />
+        </div>
       </>
     );
   }

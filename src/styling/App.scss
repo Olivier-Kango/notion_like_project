@@ -64,3 +64,21 @@ body {
   background: #f5f6fb;
   border-radius: 0.5rem;
 }
+
+.reset-icon {
+  cursor: pointer;
+  position: absolute;
+  left: -22px;
+  top: 20px;
+
+  img {
+    width: 20px;
+  }
+}
+
+.contentE {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+}
