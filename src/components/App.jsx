@@ -15,6 +15,7 @@ import mark from '../assets/mark.png';
 import '../styling/App.scss';
 import '../styling/Header.scss';
 import '../styling/Bar.scss';
+import '../styling/Main.scss';
 
 const App = () => (
   <div className="App">

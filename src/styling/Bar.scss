@@ -1,0 +1,78 @@
+.bar {
+  padding: 0 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  min-width: 22rem;
+  max-width: 75rem;
+  cursor: pointer;
+  border: 0.1rem solid rgb(229, 231, 235);
+  box-shadow: 9px 5px 99px -26px rgba(0, 0, 0, 0.54);
+  gap: 8px;
+  padding: 0.25rem 0.35rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+
+.bar .search:hover {
+  border: 0.125rem solid rgba(157, 163, 174, 0.598);
+  transition: all 0.2s ease-in-out;
+}
+
+.P {
+  padding: 3px 5px;
+  color: rgb(52, 118, 89);
+  background: rgb(217, 249, 230);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.middle {
+  color: rgb(229, 231, 235);
+}
+
+.time {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: rgb(157, 163, 174);
+}
+
+.lapin {
+  width: 19px;
+  height: 19px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(157, 163, 174);
+}
+
+.input-s {
+  border: none;
+  outline: none;
+  min-width: 6rem;
+  flex-grow: 1;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.div-button {
+  display: flex;
+  gap: 4px;
+}
+
+.div-button button {
+  all: unset;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-right: 5px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
