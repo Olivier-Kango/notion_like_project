@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { matchSorter } from 'match-sorter';
+import '../styling/Menu.scss';
 
 const allowedTags = [
   {
@@ -86,6 +87,12 @@ class SelectMenu extends React.Component {
 
     return (
       <div className="SelectMenu">
+        <h2>Add blocks</h2>
+        <p className="keep">Keep typing to filter, or escape to exit</p>
+        <p className="filter">
+          Filtering keyword
+          <span />
+        </p>
         <div className="Items">
           {items.map((item) => {
             const isselectedItem = items.indexOf(item) === selectedItemItem;
