@@ -91,6 +91,16 @@ class Input extends React.Component {
     }
   }
 
+  handleKeyPress = (e) => {
+    const { html } = this.state;
+    if (e.key === '1' && html === '/') {
+      this.setState({ tag: 'h1' }, () => {
+        this.setState({ html: '' });
+        this.closeSelectMenuHandler();
+      });
+    }
+  };
+
   openSelectMenuHandler() {
     const { x, y } = getCaretCoordinates();
     this.setState({
@@ -98,6 +108,7 @@ class Input extends React.Component {
       selectMenuPosition: { x, y },
     });
     document.addEventListener('click', this.closeSelectMenuHandler);
+    document.addEventListener('keydown', this.handleKeyPress);
   }
 
   closeSelectMenuHandler() {
@@ -149,19 +160,17 @@ class Input extends React.Component {
           />
         )}
 
-        <div className="contentE">
-          <span>{tag === 'h1' && html !== '' && resetIcon}</span>
-          <ContentEditable
-            className="Input"
-            placeholder={placeholder}
-            html={html}
-            tagName={tag}
-            innerRef={this.contentEditable}
-            onChange={this.onChangeHandler}
-            onKeyDown={this.onKeyDownHandler}
-            onKeyUp={this.onKeyUpHandler}
-          />
-        </div>
+        {tag === 'h1' && html !== '' && resetIcon}
+        <ContentEditable
+          className="Input"
+          placeholder={placeholder}
+          html={html}
+          tagName={tag}
+          innerRef={this.contentEditable}
+          onChange={this.onChangeHandler}
+          onKeyDown={this.onKeyDownHandler}
+          onKeyUp={this.onKeyUpHandler}
+        />
       </>
     );
   }
