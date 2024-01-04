@@ -3,6 +3,6 @@ import App from '../components/App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Front-end developer test project/i);
+  const linkElement = screen.getByText(/Notion-like Project/i);
   expect(linkElement).toBeInTheDocument();
 });
