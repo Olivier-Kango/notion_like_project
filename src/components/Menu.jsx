@@ -117,22 +117,19 @@ class SelectMenu extends React.Component {
                 onClick={() => onSelect(item.tag)}
                 onKeyDown={() => onSelect(item.tag)}
               >
+                <div className="T">T</div>
                 <div className="container-label">
-                  <div>
+                  <div className="label">
                     {item.label}
                   </div>
-                  <div>
-                    {item.id === 'page-title' ? <span>Shortcut: type # + space</span> : (
-                      <span>
-                        Shortcut: type
-                        {' '}
-                        {'>>'}
-                        # + space
-                      </span>
+                  <div className="descr">
+                    {item.id === 'page-title' ? <p>Shortcut: type # + space</p> : (
+                      <p>
+                        {'Shortcut: type >> # + space'}
+                      </p>
                     )}
                   </div>
                 </div>
-                <div className="T">T</div>
               </div>
             );
           })}

@@ -40,12 +40,7 @@
   }
 
   .Items {
-    height: 14rem;
-
     div[role="button"] {
-      font-size: 0.875rem;
-      font-weight: 600;
-      padding: 0.8rem 1rem;
       border-bottom: 1px solid #f5f6fb;
     }
 
@@ -54,18 +49,41 @@
     }
 
     div[role="button"]:hover {
-      background: #c9c9c9;
+      background: #c9c9c957;
       cursor: pointer;
     }
 
     div[role="button"]:hover,
     div[role="button"]:focus {
-      background: #dbdbdb;
+      background: #dbdbdb58;
       cursor: pointer;
     }
   }
 
-  .container-label {
-    background: red;
+  .Items div {
+
+    .T {
+      font-family: 'Rokkitt', serif;
+    }
+
+    .container-label {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .label {
+        font-weight: 600;
+        font-size: 0.875rem;
+      }
+
+      .descr {
+        font-weight: 400;
+        font-size: 7px;
+        color: rgb(157, 163, 174);
+        margin-top: 4px;
+        margin-bottom: 0;
+        background: red;
+      }
+    }
   }
 }
