@@ -30,6 +30,13 @@
     margin-top: 0;
     font-size: 0.75rem;
     color: rgba(98, 102, 109, 0.888);
+
+    #filterId {
+      color: white;
+      background-color: rgb(53, 101, 169);
+      border-radius: 0.25rem;
+      padding: 0.15rem 0.25rem;
+    }
   }
 
   .Items {

@@ -92,7 +92,10 @@ class SelectMenu extends React.Component {
         <p className="keep">Keep typing to filter, or escape to exit</p>
         <p className="filter">
           Filtering keyword
-          <span id="filterId">{command}</span>
+          {' '}
+          {command && command !== 'Shift' && command !== 'CapsLock' && (
+            <span id="filterId">{command}</span>
+          )}
         </p>
         <div className="Items">
           {items.map((item) => {
