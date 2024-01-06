@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { matchSorter } from 'match-sorter';
 import '../styling/Menu.scss';
 
+const MENU_HEIGHT = 150;
 const allowedTags = [
   {
     id: 'page-title',
@@ -84,9 +85,12 @@ class SelectMenu extends React.Component {
   render() {
     const { items, selectedItem, command } = this.state;
     const { onSelect } = this.props;
+    const { position: { x, y: originalY } } = this.props;
+    const y = originalY - MENU_HEIGHT;
+    const positionAttributes = { top: y, left: x };
 
     return (
-      <div className="SelectMenu">
+      <div className="SelectMenu" style={positionAttributes}>
         <h2>Add blocks</h2>
         <p className="keep">Keep typing to filter, or escape to exit</p>
         <p className="filter">
@@ -133,6 +137,10 @@ class SelectMenu extends React.Component {
 SelectMenu.propTypes = {
   close: PropTypes.func.isRequired,
   onSelect: PropTypes.func.isRequired,
+  position: PropTypes.shape({
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default SelectMenu;

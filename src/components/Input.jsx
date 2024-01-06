@@ -152,14 +152,6 @@ class Input extends React.Component {
 
     return (
       <>
-        {selectMenuIsOpen && (
-          <SelectMenu
-            position={selectMenuPosition}
-            onSelect={this.tagSelectionHandler}
-            close={this.closeSelectMenuHandler}
-          />
-        )}
-
         {tag === 'h1' && html !== '' && resetIcon}
         <ContentEditable
           className="Input"
@@ -171,6 +163,13 @@ class Input extends React.Component {
           onKeyDown={this.onKeyDownHandler}
           onKeyUp={this.onKeyUpHandler}
         />
+        {selectMenuIsOpen && (
+          <SelectMenu
+            position={selectMenuPosition}
+            onSelect={this.tagSelectionHandler}
+            close={this.closeSelectMenuHandler}
+          />
+        )}
       </>
     );
   }
