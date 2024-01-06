@@ -23,7 +23,7 @@ class SelectMenu extends React.Component {
     this.state = {
       command: '',
       items: allowedTags,
-      selectedItemItem: 0,
+      selectedItem: 0,
     };
   }
 
@@ -49,10 +49,9 @@ class SelectMenu extends React.Component {
       items,
       command,
       selectedItem,
-      onSelect,
     } = this.state;
 
-    const { close } = this.props;
+    const { close, onSelect } = this.props;
 
     switch (e.key) {
       case 'Enter':
@@ -66,14 +65,14 @@ class SelectMenu extends React.Component {
       case 'ArrowUp': {
         e.preventDefault();
         const prevselectedItem = selectedItem === 0 ? items.length - 1 : selectedItem - 1;
-        this.setState({ selectedItemItem: prevselectedItem });
+        this.setState({ selectedItem: prevselectedItem });
         break;
       }
       case 'ArrowDown':
       case 'Tab': {
         e.preventDefault();
         const nextselectedItem = selectedItem === items.length - 1 ? 0 : selectedItem + 1;
-        this.setState({ selectedItemItem: nextselectedItem });
+        this.setState({ selectedItem: nextselectedItem });
         break;
       }
       default:
@@ -83,7 +82,7 @@ class SelectMenu extends React.Component {
   }
 
   render() {
-    const { items, selectedItemItem, command } = this.state;
+    const { items, selectedItem, command } = this.state;
     const { onSelect } = this.props;
 
     return (
@@ -97,17 +96,9 @@ class SelectMenu extends React.Component {
             <span id="filterId">{command}</span>
           )}
         </p>
-        {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-        <div
-          className="Items"
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              onSelect(items[selectedItemItem].tag);
-            }
-          }}
-        >
+        <div className="Items">
           {items.map((item) => {
-            const isselectedItem = items.indexOf(item) === selectedItemItem;
+            const isselectedItem = items.indexOf(item) === selectedItem;
             return (
               <div
                 className={isselectedItem ? 'selectedItem' : null}
