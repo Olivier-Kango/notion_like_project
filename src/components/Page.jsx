@@ -47,11 +47,24 @@ class EditablePage extends React.Component {
   }
 
   addInputHandler(currentInput) {
-    const newInput = { id: random(), html: '', tag: 'p' };
+    const newInput = {
+      id: random(),
+      html: '',
+      tag: 'p',
+      placeholder: 'Type / for blocks, @ to link docs or people',
+    };
     const { inputs } = this.state;
     const index = inputs.map((b) => b.id).indexOf(currentInput.id);
     const updatedInputs = [...inputs];
+
     updatedInputs.splice(index + 1, 0, newInput);
+
+    updatedInputs.forEach((input, i) => {
+      if (i !== index + 1) {
+        input.placeholder = '';
+      }
+    });
+
     this.setState({ inputs: updatedInputs }, () => {
       currentInput.ref.nextElementSibling.focus();
     });
